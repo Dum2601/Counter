@@ -27,10 +27,8 @@ export class Count {
     }
 
     updateDisplay() {
-        this.hoursElement.textContent = this.hours.toString().padStart(2, '0')
-        this.minutesElement.textContent = this.minutes.toString().padStart(2, '0')
-        this.secondsElement.textContent = this.seconds.toString().padStart(2, '0')
 
-        console.log(`Horas: ${this.hours.toString().padStart(2, '0')}, Minutos: ${this.minutes.toString().padStart(2, '0')}, Segundos: ${this.seconds.toString().padStart(2, '0')}`)
+        // Make this method update the hours to print they in page
+
     }
 }
