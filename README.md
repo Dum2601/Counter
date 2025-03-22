@@ -1,5 +1,7 @@
-A work in progress just to review my knowledges in js vanilla.
+Just a silly program front-end only to play a little.
 
-I'm still work on it, but if you seeing a chance to improve him, why not fork?
+![image](https://github.com/user-attachments/assets/5e1b4dcb-6d82-439e-93fc-3f46ccc861e6)
 
-(Not functional yet)
+
+Is just a counter wich can pause or start the counting using the button.
+It can restart the counting up.
