@@ -1,5 +1,7 @@
-export class Count {
-    constructor(box1, box2, box3) {
+export class Count 
+{
+    constructor(box1, box2, box3) 
+    {
         this.hoursElement = box1
         this.minutesElement = box2
         this.secondsElement = box3
@@ -9,26 +11,52 @@ export class Count {
         this.seconds = 0
     }
 
-    countUp() {
-        setInterval(() => {
-            this.seconds++
-            if (this.seconds === 60) 
-            {
-                this.seconds = 0
-                this.minutes++
-            }
-            if (this.minutes === 60) 
-            {
-                this.minutes = 0
-                this.hours++;
-            }
+    showDisplay() 
+    {
+
+        setInterval(() => 
+        {
+            this.hours++
             this.updateDisplay()
-        }, 1000)
+        }, 3600 * 1000)
+
+        setInterval(() => 
+        {
+            this.minutes++
+            this.updateDisplay() 
+        }, 60 * 1000)
+
+        setInterval(() => 
+        {
+            this.seconds++
+            this.updateDisplay()
+        }, 1000); 
     }
 
-    updateDisplay() {
+    updateDisplay() 
+    {
+       
+        this.hoursElement.innerHTML = String(this.hours).padStart(2, '0')
+        this.minutesElement.innerHTML = String(this.minutes).padStart(2, '0')
+        this.secondsElement.innerHTML = String(this.seconds).padStart(2, '0')
 
-        // Make this method update the hours to print they in page
+        
+        console.log(`Horas: ${String(this.hours).padStart(2, '0')}`)
+        console.log(`Minutos: ${String(this.minutes).padStart(2, '0')}`)
+        console.log(`Segundos: ${String(this.seconds).padStart(2, '0')}`)
+    }
+
+    stopButton()
+    {
+
+
+
+    }
+
+    resetButton()
+    {
+
+        
 
     }
 }
