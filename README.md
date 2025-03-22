@@ -10,4 +10,4 @@ It can restart the counting up.
 
 You can see it in repository's deploy or in the link below:
 
-![link]https://counter-blond-nu.vercel.app
+https://counter-blond-nu.vercel.app
